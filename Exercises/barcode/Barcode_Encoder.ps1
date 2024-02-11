@@ -50,11 +50,8 @@ Function Invoke-UPCencoding() {
     $leftEncoded  = -join ($left.ToCharArray()  | ForEach-Object {$leftBinaries[$_.ToString()]})
     $rightEncoded = -join ($right.ToCharArray() | ForEach-Object {$rightBinaries[$_.ToString()]})
 
-
     # need to implement a modulo check
-    
     return "$start$leftEncoded$mid$rightEncoded$end"
-
 
 }
 

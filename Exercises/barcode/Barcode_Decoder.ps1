@@ -167,7 +167,8 @@ Function IsUpsideDown() {
 
 
 $barcode = '10101101110111101011101101011110110001010001101010101000010100001110010111001011001101110010101'
-$upsideDown = -join $barcode[($barcode.Length-1)..0]
+$upsideDown = -join $barcode[($barcode.Length-1)..0] 
+
 # expect 837654660010
 Invoke-UPCdecoding -Barcode $barcode
 Invoke-UPCdecoding -Barcode $upsideDown

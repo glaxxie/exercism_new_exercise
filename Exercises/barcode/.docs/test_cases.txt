@@ -1,0 +1,20 @@
+###Test cases###
+Decoding;
+
+Valid barcode
+
+Valid barcode, upside down
+
+#Invalid barcodes:
+-Too short, less than 95
+-Too long, more than 95
+-Invalid side:
+    -Left: odd number of #1, begin with 0 and end with 1
+    -Right: even number of #1, begin with 1 and end with 2
+-Fail modulo check
+-Invalid upside down
+
+
+Encoding;
+
+Number must pass modulo
